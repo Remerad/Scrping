@@ -27,5 +27,3 @@ for article in articles_title_url_time:
     find_all_clothes = soup.find(class_='tm-article-presenter__content tm-article-presenter__content_narrow').find_all(text=re.compile(regexp_str))
     if find_all_clothes:
         print(f'{article["datetime"]} {article["title"]}  {article["url"]}')
-    else:
-        print('нет')
